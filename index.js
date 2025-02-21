@@ -1,7 +1,9 @@
 "use strict"
 
 import { config } from "dotenv"
-import { initServer } from "./config/server"
+import  {defaultAdmin, defaultCat, initServer } from "./config/server.js"
 
 config()
 initServer()
+defaultAdmin()
+defaultCat()

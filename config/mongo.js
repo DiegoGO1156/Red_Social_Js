@@ -20,11 +20,11 @@ export const dbConnection = async() =>{
             console.log("MONGODB | disconnected")
         })
 
-        mongoose.connection.on(process.env.URI_MONGO ,{
+        mongoose.connect(process.env.URI_MONGO ,{
             serverSelectionTimeoutMS: 5000,
             maxPoolsize: 50
         })
     } catch (err) {
-        
+        console.error(err)
     }
 }
