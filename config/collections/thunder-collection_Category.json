@@ -1,0 +1,77 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Category",
+    "collectionId": "c1653cbd-2903-4b21-9a61-222c7c20345c",
+    "dateExported": "2025-02-24T15:36:31.161Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "552b3634-84b2-408b-b965-8b1783bf6b17",
+            "colId": "c1653cbd-2903-4b21-9a61-222c7c20345c",
+            "containerId": "",
+            "name": "New Category",
+            "url": "http://localhost:3000/Social_Media/v1/category/generarCategoria",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-02-24T13:56:49.767Z",
+            "modified": "2025-02-24T14:13:22.270Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjNzU2NWYwZTdlZDAyYzg0ZmUzYWYiLCJpYXQiOjE3NDA0MDYyMjcsImV4cCI6MTc0MDQwOTgyN30.Pc4MVVXt5YXJpSVaNnWIpXYmj8bXtH3ECz7cv_YWLpI"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nameCat\": \"Videojuegos\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b12f3c67-f5f8-42a9-9c1e-e9813dd3e1a9",
+            "colId": "c1653cbd-2903-4b21-9a61-222c7c20345c",
+            "containerId": "",
+            "name": "Update Category",
+            "url": "http://localhost:3000/Social_Media/v1/category/updateCategory/67bc7cf39a4712e57137735c",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2025-02-24T14:08:41.624Z",
+            "modified": "2025-02-24T14:11:03.462Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjNzU2NWYwZTdlZDAyYzg0ZmUzYWYiLCJpYXQiOjE3NDA0MDYyMjcsImV4cCI6MTc0MDQwOTgyN30.Pc4MVVXt5YXJpSVaNnWIpXYmj8bXtH3ECz7cv_YWLpI"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nameCat\": \"Filosofia\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a3e0decc-ae23-472c-9643-e4493f8e79ac",
+            "colId": "c1653cbd-2903-4b21-9a61-222c7c20345c",
+            "containerId": "",
+            "name": "Delete Category",
+            "url": "http://localhost:3000/Social_Media/v1/category/delete/67bc7e82b8cc16ab49b6321f",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2025-02-24T14:13:40.840Z",
+            "modified": "2025-02-24T15:20:38.401Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjNzU2NWYwZTdlZDAyYzg0ZmUzYWYiLCJpYXQiOjE3NDA0MTA0MDUsImV4cCI6MTc0MDQxNDAwNX0.27bup7kkImm7YH7HYnXXARXP9ijdZ3YtS8WT5cbCR_E"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nameCat\": \"Filosofia\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "PsLLB-wwqQIQELj_w6tY0jAmrjACw8qM1Q7T-rBORG5-czpnoKsHkbNUhpqetn78DbfeU6vxSoHAWfotWmT4xA"
+}

@@ -1,0 +1,101 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Auth Users",
+    "collectionId": "cfc94cae-4587-4af2-b401-f9ced031b402",
+    "dateExported": "2025-02-24T15:27:49.258Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "d5adaf03-b86a-47c9-9a15-db5e9be3c428",
+            "colId": "cfc94cae-4587-4af2-b401-f9ced031b402",
+            "containerId": "",
+            "name": "Register",
+            "url": "http://localhost:3000/Social_Media/v1/auth/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-02-24T13:31:55.736Z",
+            "modified": "2025-02-24T13:43:04.343Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Esteban\",\n  \"username\": \"ecano\",\n  \"email\": \"ecano@gmail.com\",\n  \"password\": \"12345678\",\n  \"role\": \"USER_ROLE\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "833bd5b4-e203-4de8-a183-a6fdd58248e8",
+            "colId": "cfc94cae-4587-4af2-b401-f9ced031b402",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://localhost:3000/Social_Media/v1/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-02-24T13:39:53.062Z",
+            "modified": "2025-02-24T15:20:05.316Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"admin\",\n  \"email\": \"admin@gmail.com\",\n  \"password\": \"admin123\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "0591cf2d-4fd1-4bb4-a77e-c0d9d54f0256",
+            "colId": "cfc94cae-4587-4af2-b401-f9ced031b402",
+            "containerId": "",
+            "name": "List Users",
+            "url": "http://localhost:3000/Social_Media/v1/users/",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2025-02-24T13:40:33.654Z",
+            "modified": "2025-02-24T13:40:46.427Z",
+            "headers": []
+        },
+        {
+            "_id": "88f29a36-4c45-4920-bdba-749eb953108e",
+            "colId": "cfc94cae-4587-4af2-b401-f9ced031b402",
+            "containerId": "",
+            "name": "Update Username and Name",
+            "url": "http://localhost:3000/Social_Media/v1/users/67bc7667f0e7ed02c84fe3b9",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2025-02-24T13:41:51.581Z",
+            "modified": "2025-02-24T13:45:44.096Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjNzY2N2YwZTdlZDAyYzg0ZmUzYjkiLCJpYXQiOjE3NDA0MDQ3MTgsImV4cCI6MTc0MDQwODMxOH0.REM4R4ydk70S0EDKuBoZuv4yhBvDDKNP16E1FcAhaAY"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Diego Angel\",\n  \"username\": \"dagarcia\",\n  \"email\": \"dgarcia@gmail.com\",\n  \"password\": \"12345678\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "4165a93b-03aa-401b-afec-cc04bdc9cca2",
+            "colId": "cfc94cae-4587-4af2-b401-f9ced031b402",
+            "containerId": "",
+            "name": "Update Password",
+            "url": "http://localhost:3000/Social_Media/v1/users/updatePassword/67bc7667f0e7ed02c84fe3b9",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2025-02-24T13:46:02.429Z",
+            "modified": "2025-02-24T13:48:27.137Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjNzY2N2YwZTdlZDAyYzg0ZmUzYjkiLCJpYXQiOjE3NDA0MDQ3MTgsImV4cCI6MTc0MDQwODMxOH0.REM4R4ydk70S0EDKuBoZuv4yhBvDDKNP16E1FcAhaAY"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"oldPassword\": \"12345678\",\n  \"newPassword\": \"87654321\" \n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "D8LH93dgHWM9RTYYfq22qzyy1_VEj0evCIGolDiyHAKsBoI_jq9zDpkHUh4pMz2mFG_C6WSiAFAUlIOhn09uBA"
+}

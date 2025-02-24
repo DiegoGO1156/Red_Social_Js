@@ -1,0 +1,150 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Post and Comments",
+    "collectionId": "103edeb1-b9bb-45c2-9d1b-2ec213a2eaea",
+    "dateExported": "2025-02-24T17:13:51.174Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "68a7db80-a5cb-4b55-abf6-c61cd3b04aa4",
+            "colId": "103edeb1-b9bb-45c2-9d1b-2ec213a2eaea",
+            "containerId": "",
+            "name": "New post",
+            "url": "http://localhost:3000/Social_Media/v1/post/newPost",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-02-24T13:52:54.424Z",
+            "modified": "2025-02-24T15:16:37.357Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjNzc2ODlhNDcxMmU1NzEzNzczMzgiLCJpYXQiOjE3NDA0MDk5OTgsImV4cCI6MTc0MDQxMzU5OH0.TfVfGot2cN3VbUkTcuTZ9U4-fA62ZT5d96Xr2KFhqDc"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"title\": \"Lanzamiento de la nueva consola de PlayStation\",\n \"categoryPost\": \"Videojuegos\",\n \"textPrincipal\": \"La nueva PlayStation será conocida como PlayStation Infinte, esta nueva generacion dentro de Sony vendra a innovar el mercado del gamin, esta contara con un procesador de ultima generacion y tendra IA integrada para la experiencia sea unica para cada jugador\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "690da070-a76c-44fc-9d03-61d42b58a153",
+            "colId": "103edeb1-b9bb-45c2-9d1b-2ec213a2eaea",
+            "containerId": "",
+            "name": "Post list",
+            "url": "http://localhost:3000/Social_Media/v1/post/",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2025-02-24T15:34:52.418Z",
+            "modified": "2025-02-24T15:35:32.706Z",
+            "headers": []
+        },
+        {
+            "_id": "e1d39da7-51c5-4b05-980a-10b4c35d37e6",
+            "colId": "103edeb1-b9bb-45c2-9d1b-2ec213a2eaea",
+            "containerId": "",
+            "name": "New post Copy",
+            "url": "http://localhost:3000/Social_Media/v1/post/updatePost/67bc8c2c5af5521f89ca8d10",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2025-02-24T14:58:20.949Z",
+            "modified": "2025-02-24T15:13:53.495Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjNzc2ODlhNDcxMmU1NzEzNzczMzgiLCJpYXQiOjE3NDA0MDk5OTgsImV4cCI6MTc0MDQxMzU5OH0.TfVfGot2cN3VbUkTcuTZ9U4-fA62ZT5d96Xr2KFhqDc"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"title\": \"Lanzamiento del nuevo videojuego de Mortal Kombat\",\n \"categoryPost\": \"Videojuegos\",\n \"textPrincipal\": \"El nuevo videojuego esta a la vuelta de la esquina, esta nueva entrega tiene mecanicas nunca antes vistas y trae de regreso a personajes de anteriores entregas. Esta nueva entrega esta prevista para el año 20XX. Haga su compra en www.mortalKombat.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "052e39b9-8b07-48a7-8566-b4d3ba565903",
+            "colId": "103edeb1-b9bb-45c2-9d1b-2ec213a2eaea",
+            "containerId": "",
+            "name": "DeletePost",
+            "url": "http://localhost:3000/Social_Media/v1/post/deletePost/67bc8d555af5521f89ca8d21",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2025-02-24T15:16:55.067Z",
+            "modified": "2025-02-24T15:18:15.424Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjNzc2ODlhNDcxMmU1NzEzNzczMzgiLCJpYXQiOjE3NDA0MDk5OTgsImV4cCI6MTc0MDQxMzU5OH0.TfVfGot2cN3VbUkTcuTZ9U4-fA62ZT5d96Xr2KFhqDc"
+                }
+            ]
+        },
+        {
+            "_id": "0297bf7f-0a6d-4b29-a434-01ca7237b8c2",
+            "colId": "103edeb1-b9bb-45c2-9d1b-2ec213a2eaea",
+            "containerId": "",
+            "name": "Comment",
+            "url": "http://localhost:3000/Social_Media/v1/comment/newComment",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2025-02-24T15:37:37.391Z",
+            "modified": "2025-02-24T17:09:32.474Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjNzY2N2YwZTdlZDAyYzg0ZmUzYjkiLCJpYXQiOjE3NDA0MTQxNjEsImV4cCI6MTc0MDQxNzc2MX0.pDV8FgzUpfH_wTc6Ysdf8cHSrk_bLHHykzXMsrMFQeo"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"comentario\": \"El juego se retraso deasdasdmasiado con su salida, no vale la pena\",\n  \"postComment\": \"Lanzamiento del nuevo videojuego de Mortal Kombat\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "31d91277-7957-4ea8-85dc-12c1cd694b71",
+            "colId": "103edeb1-b9bb-45c2-9d1b-2ec213a2eaea",
+            "containerId": "",
+            "name": "UpdateComment",
+            "url": "http://localhost:3000/Social_Media/v1/comment/editComment/67bca57388ace86ab7088560",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2025-02-24T17:04:59.790Z",
+            "modified": "2025-02-24T17:06:37.021Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjNzY2N2YwZTdlZDAyYzg0ZmUzYjkiLCJpYXQiOjE3NDA0MTQxNjEsImV4cCI6MTc0MDQxNzc2MX0.pDV8FgzUpfH_wTc6Ysdf8cHSrk_bLHHykzXMsrMFQeo"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"comentario\": \"El juego si vale la pena a pesar de que se retrasara mucho\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b812b2ba-1294-44ff-83d4-b1f273e4ca6a",
+            "colId": "103edeb1-b9bb-45c2-9d1b-2ec213a2eaea",
+            "containerId": "",
+            "name": "Delete Comment",
+            "url": "http://localhost:3000/Social_Media/v1/comment/deleteComment/67bca84299c04110bd36417e",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2025-02-24T17:07:39.412Z",
+            "modified": "2025-02-24T17:12:04.596Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JjNzY2N2YwZTdlZDAyYzg0ZmUzYjkiLCJpYXQiOjE3NDA0MTQxNjEsImV4cCI6MTc0MDQxNzc2MX0.pDV8FgzUpfH_wTc6Ysdf8cHSrk_bLHHykzXMsrMFQeo"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"comentario\": \"El juego si vale la pena a pesar de que se retrasara mucho\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "KPXR0iWyrvCyEY2nDkKErfa-V6XqjOti1PYSCPyt1845X106QKBc1rA8NUbptY7UtYop7tEvr2T3bj5TkHb40A"
+}

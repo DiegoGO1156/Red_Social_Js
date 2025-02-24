@@ -9,6 +9,8 @@ import { hash } from "argon2"
 import User from "../src/user/userModel.js"
 import Category from "../src/category/categoryModel.js"
 import categoryRoutes from "../src/category/categoryRoutes.js"
+import postRoutes from "../src/post/postRoutes.js"
+import commentRoutes from "../src/comment/commentRoutes.js"
 
 const middlewares = (app)=>{
     app.use(express.urlencoded({extended: false}))
@@ -23,6 +25,8 @@ const routes = (app) =>{
     app.use("/Social_Media/v1/auth", authRoutes)
     app.use("/Social_Media/v1/users", userRoutes)
     app.use("/Social_Media/v1/category", categoryRoutes)
+    app.use("/Social_Media/v1/post", postRoutes)
+    app.use("/Social_Media/v1/comment", commentRoutes)
 }
 
 const conectDB = async() =>{
