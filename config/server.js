@@ -79,25 +79,6 @@ export const defaultAdmin = async() =>{
 }
 
 
-export const defaultCat = async () => {
-    try {
-        const categName = "Uncategorized";
-        const categExist = await Category.findOne({ nameCat: categName }); 
-
-        if (!categExist) {
-            const categ = new Category({
-                nameCat: categName, 
-            });
-            await categ.save();
-            console.log("Categoría por defecto ha sido creada con éxito!!!!");
-        } else {
-            console.log("Ya existe la categoría por defecto");
-        }
-    } catch (error) {
-        console.error("Error al crear la categoría por defecto:", error);
-    }
-};
-
 export default {
     defaultCat,
     defaultAdmin
