@@ -1,3 +1,4 @@
+import Post from "../post/postModel.js";
 import Category from "./categoryModel.js"
 
 
@@ -50,6 +51,39 @@ export const updateCat = async (req, res) =>{
         return res.status(500).json({
             success: false,
             msg: "Error al Actualizar la categoria",
+            error: err.message
+        })
+    }
+}
+
+export const deleteCat = async (req, res) =>{
+    const {id} = req.params
+    try {
+        const categoria = await Category.findById(id)
+        if(categoria.status === false){
+            return res.status(400).json({
+                msg: "La categoria ya fue eliminada"
+            })
+        }
+
+        const categoriDefault = await Category.findOne({nameCat: "Uncategorized"})
+
+        if(!categoriDefault){
+            return res.status(404).json({
+                msg: "La categoria por defecto no fue encontrada"
+            })
+        }
+
+        await Post.updateMany({categoryPost: id},{categoryPost: categoriDefault._id})
+        await Category.findByIdAndUpdate(id, {status: false})
+
+        return res.status(200).json({
+            success: true,
+            msg: "LA CATEGORIA FUE ELIMINADA CON EXITO!!!!"
+        })
+    } catch (err) {
+        return res.status(500).json({
+            msg: "Error al Eliminar la categoria",
             error: err.message
         })
     }
