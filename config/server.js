@@ -8,6 +8,7 @@ import userRoutes from "../src/user/userRoutes.js"
 import { hash } from "argon2"
 import User from "../src/user/userModel.js"
 import Category from "../src/category/categoryModel.js"
+import categoryRoutes from "../src/category/categoryRoutes.js"
 
 const middlewares = (app)=>{
     app.use(express.urlencoded({extended: false}))
@@ -21,6 +22,7 @@ const middlewares = (app)=>{
 const routes = (app) =>{
     app.use("/Social_Media/v1/auth", authRoutes)
     app.use("/Social_Media/v1/users", userRoutes)
+    app.use("/Social_Media/v1/category", categoryRoutes)
 }
 
 const conectDB = async() =>{
@@ -78,6 +80,25 @@ export const defaultAdmin = async() =>{
     }
 }
 
+
+export const defaultCat = async () => {
+    try {
+        const categName = "Uncategorized";
+        const categExist = await Category.findOne({ nameCat: categName }); 
+
+        if (!categExist) {
+            const categ = new Category({
+                nameCat: categName, 
+            });
+            await categ.save();
+            console.log("Categoría por defecto ha sido creada con éxito!!!!");
+        } else {
+            console.log("Ya existe la categoría por defecto");
+        }
+    } catch (error) {
+        console.error("Error al crear la categoría por defecto:", error);
+    }
+};
 
 export default {
     defaultCat,
